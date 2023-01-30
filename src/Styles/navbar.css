@@ -1,0 +1,140 @@
+.sale{
+    color:darkred;
+}
+
+.greeting {
+    background-color: hsla(98, 16%, 26%, 1);
+    text-align: center;
+    color: white;
+    padding: 0.65rem;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.phone-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    box-shadow: 0 0.5rem 1rem hsla(0, 0%, 95%, 1);
+}
+
+.navbar-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+}
+
+.right-navbar-icon {
+    padding: 0 0.8rem 0 0;
+    font-size: 24px;
+}
+
+.phone-side-navbar-btn {
+    cursor: pointer;
+}
+
+.phone-side-navbar-btn div {
+    width: 1.55rem;
+    height: 0.125rem;
+    margin: 0.35rem;
+    background-color: black;
+    transition: 0.15s ease-in;
+}
+
+.active-phone-side-navbar-btn .line-1 {
+    transform: translate(0, 7.5px) rotate(45deg);
+}
+
+.active-phone-side-navbar-btn .line-2 {
+    opacity: 0;
+}
+
+.active-phone-side-navbar-btn .line-3 {
+    transform: translate(0, -7.5px) rotate(-45deg);
+}
+
+.phone-side-navbar {
+    transform: translate(-100%);
+    transition: 0.15s ease-in;
+}
+
+.active-phone-side-navbar {
+    transform: translate(0);
+}
+
+.phone-side-navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.75rem;
+    padding: 0 0 0 0.75rem;
+    letter-spacing: 3px;
+}
+
+.phone-side-navbar li {
+    padding: 1.15rem;
+    border-bottom: solid 1px hsla(0, 0%, 80%, 1);
+    border-right: solid 1px hsla(0, 0%, 80%, 1);
+}
+
+.lg-navbar {
+    display: none;
+}
+
+@media screen and (min-width: 990px) {
+    .phone-navbar-container {
+        display: none;
+    }
+
+    .lg-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        box-shadow: 0 0.5rem 1rem hsla(0, 0%, 95%, 1);
+    }
+
+    .lg-right-navbar ul li {
+        display: inline-block;
+        padding: 0 1.5rem 0 0;
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .lg-right-navbar ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .lg-right-navbar ul li a .bigger {
+        font-size: 24px;
+    }
+
+    .lg-right-navbar ul li a:hover {
+        border-bottom: 1px solid black;
+    }
+
+    .lg-left-navbar {
+        margin: 0 0 0 1.5rem;
+    }
+
+    .lg-left-navbar ul li {
+        display: inline-block;
+        padding: 0 1.5rem 0 0;
+        font-size: 14px;
+    }
+
+    .lg-left-navbar ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .lg-left-navbar ul li a:hover {
+        border-bottom: 1px solid black;
+    }
+}
