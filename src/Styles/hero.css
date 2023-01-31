@@ -1,0 +1,12 @@
+.hero{
+    background: url("../images/sm-hero-img.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.container{
+
+}

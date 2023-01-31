@@ -23,7 +23,7 @@ function Navbar() {
               )
             : setActiveIcon("phone-side-navbar-btn");
     };
-
+    
     return (
         <header>
             <div className="greeting">
@@ -74,7 +74,7 @@ function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <a href="/#">
+                            <a href="/#" id="sales">
                                 <b>SALE</b>
                             </a>
                         </li>
@@ -124,7 +124,7 @@ function Navbar() {
                             <a href="/#">KIDS</a>
                         </li>
                         <li>
-                            <a href="/#">SALES</a>
+                            <a href="/#" id="sales">SALE</a>
                         </li>
                         <li>
                             <a href="/#">NEW ARRIVALS</a>
@@ -146,15 +146,19 @@ function Navbar() {
                             <a href="/#">STORES</a>
                         </li>
                         <li>
-                            <a href="/#" className="bigger">
+                            <a href="/#" id="bigger">
                                 <FontAwesomeIcon icon={faUser} />
                             </a>
                         </li>
                         <li>
-                            <a href="/#" className="bigger">
+                            <a href="/#" id="bigger">
                                 <FontAwesomeIcon icon={faCircleQuestion} />
                             </a>
                         </li>
+                        <li><a href="/#" id="bigger">
+                        <FontAwesomeIcon
+                            icon={faCartShopping}
+                        /></a></li>
                     </ul>
                 </nav>
             </div>

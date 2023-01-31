@@ -11,6 +11,7 @@
     font-weight: 600;
 }
 
+
 .phone-navbar {
     display: flex;
     justify-content: space-between;
@@ -55,6 +56,9 @@
 }
 
 .phone-side-navbar {
+    position: absolute;
+    background: white;
+    width: 100%;
     transform: translate(-100%);
     transition: 0.15s ease-in;
 }
@@ -81,7 +85,11 @@
     display: none;
 }
 
-@media screen and (min-width: 990px) {
+#sales{
+    color: red;
+}
+
+@media screen and (min-width: 1050px) {
     .phone-navbar-container {
         display: none;
     }
@@ -97,7 +105,7 @@
     .lg-right-navbar ul li {
         display: inline-block;
         padding: 0 1.5rem 0 0;
-        font-size: 14px;
+        font-size: 0.71rem;
         text-decoration: none;
         color: black;
     }
@@ -106,13 +114,10 @@
         text-decoration: none;
         color: black;
         font-weight: 600;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
-    .lg-right-navbar ul li a .bigger {
-        font-size: 24px;
-    }
-
+    
     .lg-right-navbar ul li a:hover {
         border-bottom: 1px solid black;
     }
@@ -124,14 +129,19 @@
     .lg-left-navbar ul li {
         display: inline-block;
         padding: 0 1.5rem 0 0;
-        font-size: 14px;
+        font-size:0.71rem;
     }
-
+    
     .lg-left-navbar ul li a {
+        display: block;
         text-decoration: none;
         color: black;
         font-weight: 600;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
+    }
+    
+    #bigger {
+        font-size: 1.2rem;
     }
 
     .lg-left-navbar ul li a:hover {
